@@ -1,0 +1,13 @@
+
+<h1 class="display-4 text-center mb-2">Edit Article</h1>
+<form method="post" action="/articles/update/<%= article.id %>">
+    <div class="form-group">
+      <label for="title"></label>
+      <input name="title" type="text" class="form-control" id="title"  placeholder="Enter the title..." value="<%= article.title %>">
+    </div>
+    <div class="form-group">
+      <label for="body-article">Body</label>
+      <textarea  name="body" class="form-control" id="body-article" rows="5" placeholder="Enter the details here..." ><%= article.body %></textarea>
+    </div>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
